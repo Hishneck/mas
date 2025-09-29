@@ -1,0 +1,48 @@
+
+.dark{
+    /* display: flex; */
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 10px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.confirm{
+    position: absolute;
+    display: flex; 
+    /* /* display: none;  */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* /* width: 400px;  */
+    /* /* height: 200px;  */
+    padding: 20px 20px;
+    background-color: white;
+    border: 3px solid black; 
+    border-radius: 15px; 
+    /* border-bottom: 1px solid gray; */
+    z-index: 15px;
+}
+.confirm span{
+    color: black;
+    font-size: 24px;
+}
+.btn-confirm{
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+}
+.btn-close{
+    margin-bottom: 100px;
+    margin-left: 500px;
+}
+
+.dark.active{
+    display: flex;
+}

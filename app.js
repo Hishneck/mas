@@ -122,8 +122,6 @@ listElement.onclick = function(event){
         notes[index].completed = !notes[index].completed
         }else if (type==='remove'){
             confirmOpen(index)
-            console.log('delete')
-            
             // notes.splice(index, 1)
         }
         render()
@@ -135,14 +133,16 @@ const confirmOpen =function(index){
     confirmWindow.classList.toggle('active')
     btnClose.onclick = ()=>{
         confirmWindow.classList.remove('active')
-        console.log('delete')
     }
     btnConfirm.onclick=()=>{
-        console.log('delete')
-        // confirmWindow.classList.remove('active')
+        confirmWindow.classList.remove('active')
         notes.splice(index, 1)
+        render()
+        console.log('dsahwodacfawdsa')
     }
+    
 }
+
 function getNoteTemplate(note, index){
     return `
         <li
